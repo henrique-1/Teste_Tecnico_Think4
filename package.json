@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API desenvolvida para o Teste Técnico da Think4",
+  "main": "index.js",
+  "author": "Henrique Bissoli Malaman Alonso",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev ./src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "seed:config": "ts-node ./node_modules/typeorm-seeding/dist/cli.js config",
+    "seed:run": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "class-transformer": "^0.5.1",
+    "express": "^4.17.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.41",
+    "typeorm-seeding": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  }
+}
